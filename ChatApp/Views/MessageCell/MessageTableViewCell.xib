@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="262" id="KGk-i7-Jjw" customClass="MessageTableViewCell" customModule="ChatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="505" height="262"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="505" height="261.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="0Lt-pS-PFB">
+                        <rect key="frame" x="10" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="VmI-Wg-Iad"/>
+                            <constraint firstAttribute="width" secondItem="0Lt-pS-PFB" secondAttribute="height" multiplier="1:1" id="bvq-BO-nfd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wfz-MZ-z3T">
+                        <rect key="frame" x="406.5" y="0.0" width="88.5" height="251.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihv-PF-SD4">
+                                <rect key="frame" x="18" y="8" width="52.5" height="235.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56491134895706407" green="0.85254340049581767" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ihv-PF-SD4" secondAttribute="trailing" constant="18" id="SV7-VA-1m3"/>
+                            <constraint firstItem="ihv-PF-SD4" firstAttribute="leading" secondItem="Wfz-MZ-z3T" secondAttribute="leading" constant="18" id="T79-co-lYG"/>
+                            <constraint firstAttribute="bottom" secondItem="ihv-PF-SD4" secondAttribute="bottom" constant="8" id="Vn0-q3-7QS"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="uhP-X2-rUL"/>
+                            <constraint firstItem="ihv-PF-SD4" firstAttribute="top" secondItem="Wfz-MZ-z3T" secondAttribute="top" constant="8" id="vef-e5-cJH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HrL-wm-l5z">
+                        <rect key="frame" x="60" y="0.0" width="402.5" height="251.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxC-rN-edr">
+                                <rect key="frame" x="18" y="8" width="366.5" height="235.5"/>
+                                <string key="text">Note: there is a backwards compatible feature, so if you are still trying to load a GIF into a UIImageView, it will only show the 1st frame as a static image by default. However, you can enable the full GIF support by using the built-in GIF coder. See GIF coder</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92120082489999999" green="0.92120082489999999" blue="0.92120082489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="CEV-ak-UiV"/>
+                            <constraint firstItem="xxC-rN-edr" firstAttribute="leading" secondItem="HrL-wm-l5z" secondAttribute="leading" constant="18" id="IvC-ca-uCE"/>
+                            <constraint firstAttribute="trailing" secondItem="xxC-rN-edr" secondAttribute="trailing" constant="18" id="cDg-CL-sVk"/>
+                            <constraint firstAttribute="bottom" secondItem="xxC-rN-edr" secondAttribute="bottom" constant="8" id="ex1-Ua-RRP"/>
+                            <constraint firstItem="xxC-rN-edr" firstAttribute="top" secondItem="HrL-wm-l5z" secondAttribute="top" constant="8" id="zBc-gs-Nup"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HrL-wm-l5z" firstAttribute="width" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="width" constant="-100" id="Ct0-dV-CkQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Wfz-MZ-z3T" secondAttribute="trailing" constant="10" id="ERz-br-r8u"/>
+                    <constraint firstItem="HrL-wm-l5z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TXZ-X4-feM"/>
+                    <constraint firstAttribute="bottom" secondItem="Wfz-MZ-z3T" secondAttribute="bottom" constant="10" id="UPJ-7o-aAP"/>
+                    <constraint firstItem="Wfz-MZ-z3T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VO3-K6-liF"/>
+                    <constraint firstItem="Wfz-MZ-z3T" firstAttribute="width" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="width" constant="-100" id="djz-WJ-xjA"/>
+                    <constraint firstItem="0Lt-pS-PFB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fDZ-Gc-Ff9"/>
+                    <constraint firstItem="0Lt-pS-PFB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="quh-XQ-ehS"/>
+                    <constraint firstAttribute="bottom" secondItem="HrL-wm-l5z" secondAttribute="bottom" constant="10" id="vbk-LX-V2H"/>
+                    <constraint firstItem="HrL-wm-l5z" firstAttribute="leading" secondItem="0Lt-pS-PFB" secondAttribute="trailing" constant="10" id="zQl-nT-wnU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImage" destination="0Lt-pS-PFB" id="M3m-vT-FGp"/>
+                <outlet property="contentMsg" destination="xxC-rN-edr" id="46c-q3-9Fq"/>
+                <outlet property="myContenMsg" destination="ihv-PF-SD4" id="SnD-p4-lVx"/>
+                <outlet property="superContentView" destination="HrL-wm-l5z" id="LI7-bd-hgg"/>
+                <outlet property="superMyContentView" destination="Wfz-MZ-z3T" id="bRK-et-QaL"/>
+            </connections>
+            <point key="canvasLocation" x="110.5" y="220"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="7" width="500" height="467"/>
+    </resources>
+</document>
